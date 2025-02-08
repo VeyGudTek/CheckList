@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Items from "./Items"
 
 function CheckList() {
     const [fontSize, setFontSize] = useState(50)
@@ -14,7 +15,7 @@ function CheckList() {
     }
 
     return (
-        <div style={{fontSize: fontSize}}>
+        <div>
             <div className="input">
                 <form onSubmit={handleSubmit}>
                     <input type="text"/>
@@ -22,10 +23,7 @@ function CheckList() {
                 </form>
             </div>
 
-            {checkList.length != 0 && 
-            checkList.map((item) => (
-                <div>wow</div>
-            ))}
+            {checkList.length != 0 && <Items items={checkList} startID={0} fontSize={fontSize}/>}
 
         </div>
     )
