@@ -13,7 +13,11 @@ function CheckList() {
     const handleSubmit = (e, text) => {
         e.preventDefault()
         var newItems = text.split(",")
-        newItems.forEach((item) => checkList.push(item.trim()))
+        newItems.forEach((item) => {
+            if (item.trim() != ""){
+                checkList.push(item.trim())
+            }
+        })
         setCheckList(checkList.slice())
     }
     
@@ -30,7 +34,11 @@ function CheckList() {
         }
         setCheckList(checkList.slice())
         setDoneList(doneList.slice())
-        console.log(doneList, checkList)
+    }
+
+    const deleteAll = () => {
+        setCheckList([])
+        setDoneList([])
     }
 
     return (
@@ -43,6 +51,8 @@ function CheckList() {
 
             <CopyPaste items={checkList} title={"Copy CheckList"} fontSize={fontSize}/>
             <CopyPaste items={doneList} title={"Copy Completed Items"} fontSize={fontSize}/>
+
+            <button className="delete" style={{fontSize: fontSize}} onClick={deleteAll}>Delete All</button>
         </div>
     )
 }

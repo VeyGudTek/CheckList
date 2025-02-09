@@ -147,3 +147,21 @@ input[type=submit]:active {
     padding-bottom: 15px;
 }
 
+.delete{
+    display: block;
+    width: 30%;
+    margin: auto;
+    padding: 30px;
+    background-color: rgb(255, 166, 63);
+    border-radius: 50px;
+    border-width: 3px;
+    border: solid;
+}
+
+.delete:hover{
+    background-color: rgb(216, 127, 25);
+}
+
+.delete:active{
+    background-color: rgb(163, 94, 15);
+}
