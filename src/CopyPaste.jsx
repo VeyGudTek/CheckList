@@ -8,7 +8,7 @@ function CopyPaste({items, title, fontSize}){
 
     return (
         <div className="copy-paste-container">
-            <span className="label" style={{fontSize: fontSize+2}}>{title}</span>
+            <div className="label" style={{fontSize: fontSize+2}}>{title}</div>
             <div className="copy-paste" style={{fontSize: fontSize}}>
                 {text}
             </div>

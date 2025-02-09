@@ -1,27 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(177, 177, 177);
     font-family: "Roboto";
 }
 
 .settings{
     text-align: center;
+    padding: 10px;
+    background-color: rgb(228, 228, 228);
+    width: 50%;
+    margin-bottom: 5px;
+    margin-left: 25%;
+    border-radius: 50px;
 }
 
 .visual{
     display: block;
-    margin: 10px;
+}
+
+.slider-container{
+    padding: 10px;
 }
 
 .slider{
-    width: 25%;
+    width: 200px;
 }
 
 .input{
     text-align: center;
     padding: 50px;
-    background-color: rgb(203, 188, 167);
+    background-color: rgb(228, 228, 228);
+    width: 60%;
+    margin: auto;
+    border-radius: 100px;
 }
 
 input[type=text] {
@@ -41,6 +53,7 @@ input[type=text]:focus{
 input[type=submit] {
     background-color: rgb(197, 206, 255);
     padding: 10px;
+    width: 40%;
     border: solid;
     border-width: 3px;
     border-radius: 0px 50px 50px 0px; 
@@ -56,12 +69,16 @@ input[type=submit]:active {
 
 .list-container{
     margin: 5px;
-    padding: 30px;
+    margin-left: 5%;
+    padding: 15px;
     background-color: rgb(228, 228, 228);
+    border-radius: 50px;
+    width: 90%;
 }
 
 .label{
-    margin-left: 5%;
+    margin-left: 3%;
+    padding: 10px;
 }
 
 .items{
@@ -93,7 +110,7 @@ input[type=submit]:active {
 .done{
     text-align: center;
     display: inline-block;
-    background-color: rgb(255, 197, 197);
+    background-color: rgb(255, 250, 197);
     min-width: 5%;
     margin: 1%;
     padding: 1%;
@@ -102,22 +119,26 @@ input[type=submit]:active {
 }
 
 .done:hover{
-    background-color: rgb(223, 146, 146);
+    background-color: rgb(223, 221, 146);
 }
 
 .done:active{
-    background-color: rgb(161, 75, 75);
+    background-color: rgb(161, 154, 75);
 }
 
 .copy-paste-container{
+    border-radius: 50px;
+    width: 90%;
     margin: 5px;
-    padding: 30px;
+    padding: 15px;
     background-color: rgb(228, 228, 228);
+    margin-left: 5%;
 }
 
 .copy-paste{
     display: block;
     width: 80%;
     margin: auto;
+    padding-bottom: 15px;
 }
 
