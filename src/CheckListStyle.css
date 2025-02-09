@@ -126,6 +126,11 @@ input[type=submit]:active {
     background-color: rgb(161, 154, 75);
 }
 
+.no-item{
+    color:rgb(70, 70, 70);
+    text-align: center;
+}
+
 .copy-paste-container{
     border-radius: 50px;
     width: 90%;

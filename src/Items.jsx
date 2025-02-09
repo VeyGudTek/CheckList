@@ -12,7 +12,9 @@ function Items({items, startID, fontSize, moveItem, label, style}){
         <div className="list-container">
             <span className="label" style={{fontSize: fontSize+2}}>{label}</span>
             <div className="items">
-                {list}
+                {(items.length != 0) ? list : <div className="no-item" style={{fontSize: fontSize}}>
+                    This list has no items.
+                </div>}
             </div>
         </div>
         
