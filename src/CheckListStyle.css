@@ -69,3 +69,13 @@ input[type=submit]:active {
     background-color: rgb(0, 193, 193);
 }
 
+.copy-paste-container{
+    margin-bottom: 50px;
+}
+
+.copy-paste{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+

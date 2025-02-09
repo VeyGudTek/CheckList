@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Input from "./Input"
 import Items from "./Items"
+import CopyPaste from "./CopyPaste"
 
 function CheckList() {
     const [fontSize, setFontSize] = useState(25)
@@ -36,7 +37,10 @@ function CheckList() {
             <Input handleSubmit={handleSubmit} fontSize={fontSize}/>
 
             {checkList.length != 0 && <Items items={checkList} moveItem={moveItem} startID={0} label={"CheckList"} fontSize={fontSize}/>}
-            {doneList.length != 0 && <Items items={doneList} moveItem={moveItem} startID={checkList.length} label={"Completed"} fontSize={fontSize}/>}
+            {doneList.length != 0 && <Items items={doneList} moveItem={moveItem} startID={checkList.length} label={"Completed Items"} fontSize={fontSize}/>}
+
+            {checkList.length != 0&& <CopyPaste items={checkList} title={"CheckList Text"} fontSize={fontSize}/>}
+            {doneList.length != 0&& <CopyPaste items={doneList} title={"Completed Items Text"} fontSize={fontSize}/>}
         </div>
     )
 }
