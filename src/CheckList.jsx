@@ -10,7 +10,8 @@ function CheckList() {
 
     const handleSubmit = (e, text) => {
         e.preventDefault()
-        checkList.push(text)
+        var newItems = text.split(",")
+        newItems.forEach((item) => checkList.push(item.trim()))
         setCheckList(checkList.slice())
     }
     
