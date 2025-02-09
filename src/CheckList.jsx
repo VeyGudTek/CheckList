@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Settings from "./Settings"
 import Input from "./Input"
 import Items from "./Items"
 import CopyPaste from "./CopyPaste"
@@ -8,6 +9,15 @@ function CheckList() {
 
     const [checkList, setCheckList] = useState([])
     const [doneList, setDoneList] = useState([])
+
+    const adjustFontSize = (increase) => {
+        if (increase){
+            setFontSize(fontSize + 1)
+        }
+        else{
+            setFontSize(fontSize - 1)
+        }
+    }
 
     const handleSubmit = (e, text) => {
         e.preventDefault()
@@ -34,6 +44,7 @@ function CheckList() {
 
     return (
         <div>
+            <Settings adjustFontSize={adjustFontSize} fontSize={fontSize}/>
             <Input handleSubmit={handleSubmit} fontSize={fontSize}/>
 
             {checkList.length != 0 && <Items items={checkList} moveItem={moveItem} startID={0} label={"CheckList"} fontSize={fontSize}/>}
