@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Input from "./Input"
 import Items from "./Items"
 
 function CheckList() {
@@ -16,12 +17,7 @@ function CheckList() {
 
     return (
         <div>
-            <div className="input">
-                <form onSubmit={handleSubmit}>
-                    <input type="text"/>
-                    <input type="submit"/>
-                </form>
-            </div>
+            <Input handleSubmit={handleSubmit}/>
 
             {checkList.length != 0 && <Items items={checkList} startID={0} fontSize={fontSize}/>}
 
