@@ -10,15 +10,6 @@ function CheckList() {
     const [checkList, setCheckList] = useState([])
     const [doneList, setDoneList] = useState([])
 
-    const adjustFontSize = (increase) => {
-        if (increase){
-            setFontSize(fontSize + 1)
-        }
-        else{
-            setFontSize(fontSize - 1)
-        }
-    }
-
     const handleSubmit = (e, text) => {
         e.preventDefault()
         var newItems = text.split(",")
@@ -44,7 +35,7 @@ function CheckList() {
 
     return (
         <div>
-            <Settings adjustFontSize={adjustFontSize} fontSize={fontSize}/>
+            <Settings setFontSize={setFontSize} fontSize={fontSize}/>
             <Input handleSubmit={handleSubmit} fontSize={fontSize}/>
 
             {checkList.length != 0 && <Items items={checkList} moveItem={moveItem} startID={0} label={"CheckList"} fontSize={fontSize}/>}

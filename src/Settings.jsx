@@ -1,4 +1,4 @@
-function Settings({adjustFontSize, fontSize}){
+function Settings({setFontSize, fontSize}){
 
     return (
         <div>
@@ -6,13 +6,8 @@ function Settings({adjustFontSize, fontSize}){
                 CheckList
             </div>
             <div>
-                <button onClick={() => adjustFontSize(false)}>
-                    Decrease
-                </button>
-                    Font Size
-                <button onClick={() => adjustFontSize(true)}>
-                    Increase
-                </button>
+                Font Size
+                <input type="range" min="10" max="48" onChange={(e) => setFontSize(parseInt(e.target.value))} value={fontSize.toString()}/>
             </div>
         </div>
     )
