@@ -25,14 +25,26 @@ input[type=text]:focus{
 }
 
 input[type=submit] {
-    background-color: rgb(163, 179, 255);
+    background-color: rgb(197, 206, 255);
     padding: 10px;
     border-color: rgb(56, 56, 56);
     border-radius: 0px 50px 50px 0px; 
 }
 
+input[type=submit]:hover {
+    background-color: rgb(146, 159, 223);
+}
+
 input[type=submit]:active {
-    background-color: rgb(99, 113, 182);
+    background-color: rgb(75, 89, 161);
+}
+
+.list-container{
+    margin-bottom: 50px;
+}
+
+.label{
+    margin-left: 5%;
 }
 
 .items{
@@ -40,7 +52,7 @@ input[type=submit]:active {
     margin: auto;
     display: flexbox;
     flex-flow: wrap;
-    background-color: black;
+    background-color: rgb(83, 83, 83);
 }
 
 .item{
@@ -51,5 +63,9 @@ input[type=submit]:active {
     margin: 1%;
     padding: 1%;
     border-radius: 50px;
+}
+
+.item:hover{
+    background-color: rgb(0, 193, 193);
 }
 
