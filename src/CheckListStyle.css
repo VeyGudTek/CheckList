@@ -140,6 +140,22 @@ input[type=submit]:active {
     margin-left: 5%;
 }
 
+.copy-paste-button{
+    display: block;
+    margin: auto;
+    width: 95%;
+    background-color: rgb(208, 208, 208);
+    border-radius: 40px;
+}
+
+.copy-paste-button:hover{
+    background-color: rgb(188, 188, 188);
+}
+
+.copy-paste-button:active{
+    background-color: rgb(142, 142, 142);
+}
+
 .copy-paste{
     display: block;
     width: 80%;
