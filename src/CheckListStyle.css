@@ -7,6 +7,32 @@ body {
 
 .input{
     text-align: center;
+    padding: 50px;
+    background-color: rgb(203, 188, 167);
+}
+
+input[type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    border-right-width: 0px;
+    padding: 10px;
+    border-color: rgb(56, 56, 56);
+    border-radius: 50px 0px 0px 50px;
+}
+
+input[type=text]:focus{
+    outline: solid rgb(120, 125, 130);
+}
+
+input[type=submit] {
+    background-color: rgb(163, 179, 255);
+    padding: 10px;
+    border-color: rgb(56, 56, 56);
+    border-radius: 0px 50px 50px 0px; 
+}
+
+input[type=submit]:active {
+    background-color: rgb(99, 113, 182);
 }
 
 .items{
@@ -18,8 +44,12 @@ body {
 }
 
 .item{
+    text-align: center;
     display: inline-block;
     background-color: aqua;
-    width: auto;
+    min-width: 5%;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 50px;
 }
 
