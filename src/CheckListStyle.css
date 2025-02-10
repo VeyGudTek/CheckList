@@ -83,6 +83,7 @@ input[type=submit]:active {
 }
 
 .list-container{
+    position: relative;
     margin: 5px;
     margin-left: 5%;
     padding: 15px;
@@ -91,15 +92,26 @@ input[type=submit]:active {
     width: 90%;
 }
 
+.list-title{
+    display: flex;
+    align-items: center;
+}
+
 .label{
     margin-left: 3%;
     padding: 10px;
 }
 
+.instructions{
+    margin-right: 3%;
+    margin-left: auto;
+    color: rgb(70, 70, 70);
+}
+
 .items{
     width: 80%;
     margin: auto;
-    display: flexbox;
+    display: flex;
     flex-flow: wrap;
 }
 
@@ -144,6 +156,7 @@ input[type=submit]:active {
 .no-item{
     color:rgb(70, 70, 70);
     text-align: center;
+    margin: auto;
 }
 
 .copy-paste-container{
