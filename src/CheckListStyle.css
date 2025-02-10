@@ -122,7 +122,7 @@ input[type=submit]:active {
     background-color: rgb(197, 206, 255);
     min-width: 5%;
     margin: 1%;
-    padding: 1%;
+    padding: max(1%, 10px);
     border-radius: 50px;
     border: solid black;
     color: black;
