@@ -5,13 +5,16 @@ body {
     font-family: "Roboto";
 }
 
+.settings-container{
+    text-align: center;
+}
+
 .settings{
+    display: inline-block;
     text-align: center;
     padding: 10px;
     background-color: rgb(228, 228, 228);
-    width: 50%;
     margin-bottom: 5px;
-    margin-left: 25%;
     border-radius: 50px;
 }
 
@@ -27,13 +30,25 @@ body {
     width: 200px;
 }
 
+.sample{
+    background-color: rgb(208, 208, 208);
+    border-radius: 30px;
+    display: inline-block;
+    padding: 20px;
+    margin: auto;
+}
+
+.input-prompt{
+    padding-bottom: 10px;
+}
+
 .input{
     text-align: center;
-    padding: 50px;
+    padding: 30px;
     background-color: rgb(228, 228, 228);
     width: 60%;
     margin: auto;
-    border-radius: 100px;
+    border-radius: 50px;
 }
 
 input[type=text] {
@@ -191,11 +206,13 @@ input[type=submit]:active {
     transition: opacity 2s linear;
 }
 
+.delete-container{
+    text-align: center;
+}
+
 .delete{
-    display: block;
-    width: 30%;
-    margin: auto;
-    padding: 30px;
+    display: inline-block;
+    padding: 15px;
     background-color: rgb(255, 166, 63);
     border-radius: 50px;
     border-width: 3px;

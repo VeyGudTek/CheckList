@@ -31,7 +31,7 @@ function CopyPaste({items, title, fontSize}){
                 <div className="label" style={{fontSize: fontSize+2}}>{title}</div>
                 <div className="copy-paste" style={{fontSize: fontSize}}>
                     {text != "" ? text : <div className="no-item">
-                        This list has no items.
+                        You must add items into the list before you can copy the text.
                     </div>}
                 </div>
             </div>

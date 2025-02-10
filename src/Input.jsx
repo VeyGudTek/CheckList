@@ -13,7 +13,7 @@ function Input({handleSubmit, fontSize}){
 
     return (
         <div className="input" >
-            <span style={{fontSize: fontSize}}>Enter a comma seperated list or individual items to add them to your checklist!</span>
+            <div className="input-prompt" style={{fontSize: fontSize}}>Enter a comma seperated list or individual items to add them to your checklist!</div>
 
             <form onSubmit={(e) => {handleSubmit(e, text); resetText();}}>
                 <input type="text" placeholder={'"Banana, Apple, Milk" or "Grapes"'} value={text} onChange={handleOnChange} style={{fontSize: fontSize}} required/>

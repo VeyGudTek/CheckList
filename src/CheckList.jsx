@@ -52,7 +52,9 @@ function CheckList() {
             <CopyPaste items={checkList} title={"Copy CheckList"} fontSize={fontSize}/>
             <CopyPaste items={doneList} title={"Copy Completed Items"} fontSize={fontSize}/>
 
-            <button className="delete" style={{fontSize: fontSize}} onClick={deleteAll}>Delete All</button>
+            <div className="delete-container">
+                <button className="delete" style={{fontSize: fontSize}} onClick={deleteAll}>Delete All</button>
+            </div>
         </div>
     )
 }
