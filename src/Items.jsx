@@ -10,7 +10,10 @@ function Items({items, startID, fontSize, moveItem, label, style}){
 
     return (
         <div className="list-container">
-            <span className="label" style={{fontSize: fontSize+2}}>{label}</span>
+            <div className="list-title"> 
+                <div className="label" style={{fontSize: fontSize+2}}>{label}</div>
+                <div className="instructions" style={{fontSize: fontSize-4}}>Click on an item to move lists.</div>
+            </div>
             <div className="items">
                 {(items.length != 0) ? list : <div className="no-item" style={{fontSize: fontSize}}>
                     This list has no items.
