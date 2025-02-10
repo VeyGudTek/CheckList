@@ -12,6 +12,9 @@ function CheckList() {
 
     const handleSubmit = (e, text) => {
         e.preventDefault()
+
+        text = text.replace(/＇|，|．|·|、|。/, ",")
+        
         var newItems = text.split(",")
         newItems.forEach((item) => {
             if (item.trim() != ""){
