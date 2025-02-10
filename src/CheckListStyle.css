@@ -67,9 +67,10 @@ input[type=text]:focus{
 
 input[type=submit] {
     background-color: rgb(197, 206, 255);
+    color: black;
     padding: 10px;
     width: 40%;
-    border: solid;
+    border: solid black;
     border-width: 3px;
     border-radius: 0px 50px 50px 0px; 
 }
@@ -123,7 +124,8 @@ input[type=submit]:active {
     margin: 1%;
     padding: 1%;
     border-radius: 50px;
-    border: solid;
+    border: solid black;
+    color: black;
 }
 
 .item:hover{
@@ -142,7 +144,8 @@ input[type=submit]:active {
     margin: 1%;
     padding: 1%;
     border-radius: 50px;
-    border: solid;
+    border: solid black;
+    color: black;
 }
 
 .done:hover{
@@ -229,7 +232,8 @@ input[type=submit]:active {
     background-color: rgb(255, 166, 63);
     border-radius: 50px;
     border-width: 3px;
-    border: solid;
+    border: solid black;
+    color: black;
 }
 
 .delete:hover{
