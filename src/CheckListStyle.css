@@ -132,6 +132,9 @@ input[type=submit]:active {
 }
 
 .copy-paste-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50px;
     width: 90%;
     margin: 5px;
@@ -161,6 +164,31 @@ input[type=submit]:active {
     width: 80%;
     margin: auto;
     padding-bottom: 15px;
+}
+
+.copied{
+    pointer-events: none;
+    text-align: center;
+    width: 20%;
+    background-color: rgb(172, 172, 255);
+    padding: 15px;
+    position: absolute;
+    border-radius: 50px;
+    border: solid black;
+    opacity: 1;
+}
+
+.fadeOut{
+    pointer-events: none;
+    text-align: center;
+    width: 20%;
+    background-color: rgb(172, 172, 255);
+    padding: 15px;
+    position: absolute;
+    border-radius: 50px;
+    border: solid black;
+    opacity: 0;
+    transition: opacity 2s linear;
 }
 
 .delete{
