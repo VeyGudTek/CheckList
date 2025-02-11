@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Settings from "./Settings"
 import Input from "./Input"
 import Items from "./Items"
@@ -9,6 +9,15 @@ function CheckList() {
 
     const [checkList, setCheckList] = useState([])
     const [doneList, setDoneList] = useState([])
+    
+    useEffect(() => {
+        if (sessionStorage.getItem("checkList")){
+            setCheckList(JSON.parse(sessionStorage.getItem("checkList")))
+        }
+        if (sessionStorage.getItem("doneList")){
+            setDoneList(JSON.parse(sessionStorage.getItem("doneList")))
+        }
+    }, [])
 
     const handleSubmit = (e, text) => {
         e.preventDefault()
@@ -22,6 +31,7 @@ function CheckList() {
             }
         })
         setCheckList(checkList.slice())
+        sessionStorage.setItem("checkList", JSON.stringify(checkList))
     }
     
     const moveItem = (item, items) => {
@@ -37,11 +47,14 @@ function CheckList() {
         }
         setCheckList(checkList.slice())
         setDoneList(doneList.slice())
+        sessionStorage.setItem("checkList", JSON.stringify(checkList))
+        sessionStorage.setItem("doneList", JSON.stringify(doneList))
     }
 
     const deleteAll = () => {
         setCheckList([])
         setDoneList([])
+        sessionStorage.clear()
     }
 
     return (
